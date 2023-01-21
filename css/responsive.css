@@ -1,0 +1,97 @@
+/*===============media queries===============*/
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
+    }
+}
+
+@media (max-width:768px) {
+
+    header .fa-bars {
+        display: block;
+
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        text-align: center;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+    header .logo img {
+        width: 145px;
+        height: 70px;
+        border-radius: 32px 19px 0 116px;
+        box-shadow: 0 .5rem 1rem #070000;
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+
+    }
+    .about .row .content {
+        text-align: center;
+        flex: 1 1 40rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .icon-container .icons h3 {
+        font-size: 3rem;
+    }
+
+    .icon-container .icons span {
+        font-size: 1.7rem;
+    }
+
+    .product .box-container .box .image img {
+        height: 25rem;
+        width: 48rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
