@@ -19,11 +19,14 @@
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:688px) {
 
     header .fa-bars {
         display: block;
 
+    }
+    header{
+        width: 445px;
     }
 
     header .navbar {
@@ -82,6 +85,13 @@
     .product .box-container .box .image img {
         height: 25rem;
         width: 48rem;
+    }
+    .contact .row .map iframe{
+        width: 445px;
+        height: 400px;
+    }
+    .product .box-container{
+        grid-template-columns: repeat(1,1fr); 
     }
 }
 
